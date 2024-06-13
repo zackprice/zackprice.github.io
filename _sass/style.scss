@@ -296,11 +296,11 @@ pre {
     background-size: cover;
     margin-bottom: 1em;
     width: 100%;
-    height: auto; /* This should adapt based on the content, but let's set a minimum height */
-    min-height: 200px; /* Set a minimum height to ensure it displays initially */
+    position: relative; /* Required for JavaScript to calculate the height */
+    min-height: 200px; /* Ensure it has an initial minimum height */
     
     @include media-query($on-palm) {
-        min-height: 200px; /* Ensure there's a minimum height on smaller screens too */
+        min-height: 200px;
     }
 }
 
