@@ -293,12 +293,14 @@ pre {
 /* Header Image on posts */
 .page-image {
     background-position: center center;
-    background-size: contain; /* Change from 'cover' to 'contain' */
+    background-size: cover;
     margin-bottom: 1em;
-    height: auto; /* Allow the image to set its own height */
+    width: 100%;
+    height: auto; /* This should adapt based on the content, but let's set a minimum height */
+    min-height: 200px; /* Set a minimum height to ensure it displays initially */
     
     @include media-query($on-palm) {
-        height: auto; /* Allow the image to set its own height for smaller screens too */
+        min-height: 200px; /* Ensure there's a minimum height on smaller screens too */
     }
 }
 
