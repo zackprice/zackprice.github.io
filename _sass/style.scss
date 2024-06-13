@@ -304,6 +304,19 @@ pre {
     }
 }
 
+.page-image-top {
+    width: 100%;
+    margin-bottom: 1em;
+    overflow: hidden; /* Optional: hides any overflow if the image exceeds the container */
+}
+
+.page-image-top img {
+    width: 100%;
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any whitespace below the image */
+}
+
+
 /* Post and page title */
 .page-title {
     font-weight: 600;

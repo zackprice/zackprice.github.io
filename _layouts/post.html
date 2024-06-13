@@ -7,7 +7,9 @@
 <div class="container partition">
 {% include nav-page.html %}
 {% if page.img %}
-<div class="page-image" style="background-image: url({{site.baseurl}}/img/{{page.img}})"></div>
+<div class="page-image-top">
+    <img src="{{site.baseurl}}/img/{{page.img}}" alt="Page Image">
+</div>
 {% else %}
 {% endif %}
        <div class="row" style="margin-top: 2em">
