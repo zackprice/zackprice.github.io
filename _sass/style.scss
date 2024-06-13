@@ -292,12 +292,13 @@ pre {
 
 /* Header Image on posts */
 .page-image {
-    /*height: 320px;*/
     background-position: center center;
-    background-size: cover;
+    background-size: contain; /* Change from 'cover' to 'contain' */
     margin-bottom: 1em;
+    height: auto; /* Allow the image to set its own height */
+    
     @include media-query($on-palm) {
-       height: 200px; 
+        height: auto; /* Allow the image to set its own height for smaller screens too */
     }
 }
 
